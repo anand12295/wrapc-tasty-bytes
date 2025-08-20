@@ -52,6 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'spice-yellow': 'hsl(var(--spice-yellow))',
+				'curry-orange': 'hsl(var(--curry-orange))',
+				'tandoori-red': 'hsl(var(--tandoori-red))',
+				'mint-fresh': 'hsl(var(--mint-fresh))',
+				'cream-base': 'hsl(var(--cream-base))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -88,7 +93,22 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'bounce-gentle': 'bounce 1s infinite',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-warm': 'pulse-warm 2s infinite'
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-accent': 'var(--gradient-accent)',
+				'gradient-warm': 'var(--gradient-warm)'
+			},
+			boxShadow: {
+				'warm': 'var(--shadow-warm)',
+				'spice': 'var(--shadow-spice)'
+			},
+			fontFamily: {
+				'display': ['Inter', 'system-ui', 'sans-serif'],
 			}
 		}
 	},
