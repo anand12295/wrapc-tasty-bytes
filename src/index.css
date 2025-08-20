@@ -8,30 +8,30 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* WrapC Brand Colors - Spice Inspired Palette */
-    --background: 45 100% 98%;
-    --foreground: 25 30% 15%;
+    /* WrapC Brand Colors - Cool & Calm Palette */
+    --background: 210 50% 98%;
+    --foreground: 220 20% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 25 30% 15%;
+    --card-foreground: 220 20% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 25 30% 15%;
+    --popover-foreground: 220 20% 20%;
 
-    /* Primary: Vibrant Red (Chili) */
-    --primary: 0 85% 55%;
+    /* Primary: Sage Green */
+    --primary: 150 30% 45%;
     --primary-foreground: 0 0% 98%;
 
-    /* Secondary: Warm Orange (Paprika) */
-    --secondary: 25 95% 60%;
+    /* Secondary: Soft Teal */
+    --secondary: 180 25% 50%;
     --secondary-foreground: 0 0% 98%;
 
-    /* Muted: Soft Cream */
-    --muted: 45 50% 95%;
-    --muted-foreground: 25 20% 45%;
+    /* Muted: Light Blue Gray */
+    --muted: 210 30% 95%;
+    --muted-foreground: 220 15% 50%;
 
-    /* Accent: Fresh Green (Mint/Cilantro) */
-    --accent: 145 70% 45%;
+    /* Accent: Fresh Mint */
+    --accent: 165 40% 55%;
     --accent-foreground: 0 0% 98%;
 
     /* Destructive Red */
@@ -39,25 +39,25 @@ All colors MUST be HSL.
     --destructive-foreground: 210 40% 98%;
 
     /* Borders and Inputs */
-    --border: 45 30% 85%;
-    --input: 45 30% 85%;
-    --ring: 0 85% 55%;
+    --border: 210 20% 85%;
+    --input: 210 20% 85%;
+    --ring: 150 30% 45%;
 
     /* Custom WrapC Colors */
-    --spice-yellow: 50 100% 65%;
-    --curry-orange: 35 90% 60%;
-    --tandoori-red: 10 85% 50%;
-    --mint-fresh: 145 60% 50%;
-    --cream-base: 45 60% 96%;
+    --sage-green: 150 30% 45%;
+    --mint-blue: 165 40% 55%;
+    --ocean-teal: 180 25% 50%;
+    --lavender-gray: 240 15% 65%;
+    --cream-base: 210 40% 96%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 85% 55%), hsl(25 95% 60%));
-    --gradient-accent: linear-gradient(135deg, hsl(145 70% 45%), hsl(50 100% 65%));
-    --gradient-warm: linear-gradient(180deg, hsl(45 100% 98%), hsl(45 60% 96%));
+    --gradient-hero: linear-gradient(135deg, hsl(150 30% 45%), hsl(180 25% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(165 40% 55%), hsl(150 30% 45%));
+    --gradient-warm: linear-gradient(180deg, hsl(210 50% 98%), hsl(210 40% 96%));
     
     /* Shadows */
-    --shadow-warm: 0 10px 30px -10px hsl(25 95% 60% / 0.3);
-    --shadow-spice: 0 0 40px hsl(0 85% 55% / 0.2);
+    --shadow-warm: 0 10px 30px -10px hsl(180 25% 50% / 0.2);
+    --shadow-spice: 0 0 40px hsl(150 30% 45% / 0.15);
 
     --radius: 0.5rem;
 
@@ -79,39 +79,39 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark mode with warm food theme */
-    --background: 25 15% 8%;
-    --foreground: 45 50% 95%;
+    /* Dark mode with cool theme */
+    --background: 220 20% 8%;
+    --foreground: 210 30% 95%;
 
-    --card: 25 20% 12%;
-    --card-foreground: 45 50% 95%;
+    --card: 220 25% 12%;
+    --card-foreground: 210 30% 95%;
 
-    --popover: 25 20% 12%;
-    --popover-foreground: 45 50% 95%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 30% 95%;
 
-    --primary: 0 85% 55%;
+    --primary: 150 25% 45%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 25 80% 50%;
+    --secondary: 180 20% 50%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 25 20% 18%;
-    --muted-foreground: 45 30% 65%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 210 20% 65%;
 
-    --accent: 145 60% 40%;
+    --accent: 165 35% 50%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 25 20% 20%;
-    --input: 25 20% 20%;
-    --ring: 0 85% 55%;
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 150 25% 45%;
 
     /* Dark mode gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 75% 45%), hsl(25 80% 50%));
-    --gradient-accent: linear-gradient(135deg, hsl(145 60% 40%), hsl(50 80% 55%));
-    --gradient-warm: linear-gradient(180deg, hsl(25 15% 8%), hsl(25 20% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(150 25% 35%), hsl(180 20% 40%));
+    --gradient-accent: linear-gradient(135deg, hsl(165 35% 40%), hsl(150 25% 35%));
+    --gradient-warm: linear-gradient(180deg, hsl(220 20% 8%), hsl(220 25% 12%));
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

@@ -20,14 +20,14 @@ const MenuHighlights = () => {
     },
     {
       id: 2,
-      name: "Spicy Chicken Roll",
-      description: "Tender chicken pieces with spicy marinade, onions, and signature sauces in a golden wrap",
-      price: "₹169",
+      name: "Mediterranean Pita Sandwich",
+      description: "Fresh pita bread filled with grilled vegetables, hummus, olives, and Mediterranean herbs",
+      price: "₹139",
       image: chickenRoll,
-      rating: 4.9,
-      tags: ["Bestseller", "Spicy"],
-      icon: Flame,
-      spiceLevel: 4
+      rating: 4.7,
+      tags: ["Pita", "Fresh"],
+      icon: Leaf,
+      spiceLevel: 1
     },
     {
       id: 3,
@@ -39,6 +39,17 @@ const MenuHighlights = () => {
       tags: ["Combo", "Healthy"],
       icon: Leaf,
       spiceLevel: 1
+    },
+    {
+      id: 4,
+      name: "Signature Sauce Collection",
+      description: "Our house-made mint, tamarind, and garlic sauces - perfect for dipping or drizzling",
+      price: "₹49",
+      image: paneerWrap,
+      rating: 4.6,
+      tags: ["Sauce", "Add-on"],
+      icon: Star,
+      spiceLevel: 0
     }
   ];
 
@@ -58,15 +69,15 @@ const MenuHighlights = () => {
         {/* Header */}
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
-            Our <span className="text-primary">Bestselling</span> Wraps
+            Our <span className="text-primary">Vegetarian</span> Specialties
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover our most loved items that keep customers coming back for more
+            Fresh wraps, pita sandwiches, and signature sauces made with love
           </p>
         </div>
 
         {/* Menu Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {menuItems.map((item) => {
             const Icon = item.icon;
             return (
@@ -84,7 +95,7 @@ const MenuHighlights = () => {
                   
                   {/* Rating Badge */}
                   <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-1">
-                    <Star className="h-4 w-4 text-spice-yellow fill-current" />
+                    <Star className="h-4 w-4 text-sage-green fill-current" />
                     <span className="font-semibold text-sm">{item.rating}</span>
                   </div>
 
@@ -122,12 +133,14 @@ const MenuHighlights = () => {
                   </div>
 
                   {/* Spice Level */}
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-medium text-muted-foreground">Spice Level:</span>
-                    <div className="flex gap-1">
-                      {renderSpiceLevel(item.spiceLevel)}
+                  {item.spiceLevel > 0 && (
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm font-medium text-muted-foreground">Spice Level:</span>
+                      <div className="flex gap-1">
+                        {renderSpiceLevel(item.spiceLevel)}
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </CardContent>
               </Card>
             );
